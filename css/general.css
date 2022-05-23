@@ -1,0 +1,55 @@
+/* -------- CONFIGURACIONES GENERALES -------- */
+
+/* -------- IMPORTANDO TIPOGRAFÍA -------- */
+@font-face {
+	font-family: Montserrat;
+	src: url("./Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url("./Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: RobotoB;
+	src: url("./Roboto-Bold.ttf");
+}
+
+/* ---------------VARIABLES CSS----------- */
+:root{
+    /* TAMAÑOS DE FUENTE TIPOGRAFICA */
+    --Jumbo: 50px;
+    --Titulo: 26px;
+    --subTitulo: 24px;
+    --encabezado: 18px;
+    --cuerpo: 16px;
+    
+    /* COLORES */
+    --azul: #2754C9;
+    }
+
+    
+    h1, h2, h3, h4{
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    /* label{
+        font-family: RobotoB;
+    } */
+    h2{
+        font-size: var(--Titulo);
+    }
+    h3{
+        font-size: var(--subTitulo);
+    }
+    
+    p, label, th, td, tr, button, li{
+        font-family: Roboto;
+    }
+    
+    label th{
+        font-size: var(--encabezado);
+    }
+    p, td{
+        font-size: var(--cuerpo);
+    }
