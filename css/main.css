@@ -1,28 +1,30 @@
 /* Cabecera */
-.first-header-content{
+.first-header-content {
     background-color: var(--azul);
     display: flex;
 }
-.logo-container{
+
+.logo-container {
     width: 150px;
     margin: auto;
 }
-.logo-container img{
+
+.logo-container img {
     width: 100%;
 }
 
-.search-section{
+.search-section {
     display: none;
     /* align-items: center;
     width: calc(100% - 250px); */
 }
 
-.search-container{
+.search-container {
     height: 30px;
     display: flex;
 }
 
-.search-boxes{
+.search-boxes {
     display: block;
     text-align: center;
     padding: 8px;
@@ -30,7 +32,7 @@
 }
 
 /* NAVEGACION */
-.navegacion{
+.navegacion {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,31 +41,35 @@
     display: flex;
 }
 
-.menu{
+.menu {
     background-color: black;
     max-width: 0;
     transition: 0.8s max-width;
     overflow: hidden;
 }
-.menu.visible{
+
+.menu.visible {
     max-width: 300px;
 }
 
-.menu li{
+.menu li {
     padding: 10px 5px;
     text-align: center;
 }
-.menu li a{
+
+.menu li:hover {
+    background-color: var(--azul);
+}
+
+.menu li a {
     color: white;
 }
-.menu li a{
-    color: white;
-}
-.btn-burguer{
+
+.btn-burguer {
     border-radius: 10px;
     padding: 8px;
     background-color: var(--azul);
-    color:white;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     /* color: white; */
@@ -71,8 +77,105 @@
 }
 
 /* PRESENTACION */
-.presentacion img{
+.presentacion img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* CARROUSEL */
+.anuncio {
+    display: none;
+}
+
+.carrousel {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 700px) {
+
+    /* NAVEGACION */
+    .navegacion {
+        position: relative;
+        width: 100%;
+        max-height: 60px;
+        top: auto;
+        left: auto;
+        z-index: 0;
+    }
+
+    .menu {
+        background-color: black;
+        min-width: 100%;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu li {
+        padding: 10px;
+        border-right: solid 1px white;
+    }
+    .menu li:last-child {
+        padding: 10px;
+        border-right: none;
+    }
+    .menu li a {
+        color: white;
+    }
+
+    .btn-burguer {
+        display: none;
+    }
 }
