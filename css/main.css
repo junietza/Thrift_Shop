@@ -4,7 +4,7 @@
     display: flex;
 }
 .logo-container{
-    width: 250px;
+    width: 150px;
     margin: auto;
 }
 .logo-container img{
@@ -63,7 +63,7 @@
     border-radius: 10px;
     padding: 8px;
     background-color: var(--azul);
-    color: black;
+    color:white;
     font-size: 20px;
     font-weight: bold;
     /* color: white; */

@@ -1,0 +1,13 @@
+.galeria{
+    padding: 16px;
+}
+.lista_img{
+    width:100%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    display:flex;
+    overflow-y:auto;
+}
+
