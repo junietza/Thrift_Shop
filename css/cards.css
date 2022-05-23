@@ -1,13 +1,40 @@
-.galeria{
-    padding: 16px;
+.main h2{
+    font-style: Arial;
 }
-.lista_img{
+.galeria{
+    display: flex;
+    overflow-y: auto;
+    padding: 16px:
+}
+.lista_img img{
     width:100%;
     object-fit: cover;
     width: 80px;
     height: 80px;
     margin-right: 10px;
-    display:flex;
-    overflow-y:auto;
+    display:block;
+    
+}
+.lista_img{
+    display: flex;
+    overflow-y: auto;
+    background: rgb(43, 76, 226);
+}
+.card{
+    margin-right:10px;
+    position: relative;
+}
+.cuerpo-card{
+    position: absolute;
+    bottom: 0;
+
+}
+.card img{
+    width: 200px;
+    object-fit: contain;
+    height: 300px;
+}
+.card h5{
+    font-style: Arial;
 }
 
