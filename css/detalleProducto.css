@@ -43,7 +43,27 @@ margin-bottom: 20px;
 
 .texto .starWidget label{
     font-size: 40px;
-    color: #ffb400;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) label:hover, input:not(:checked) label:hover label {
+    color: #FD4;
+}
+
+input:checked label{
+    color: #FD4;
+}
+
+input#rate5:checked label{
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input:checked form{
+    display: block;
 }
 
 @media screen and (min-width: 768px){
