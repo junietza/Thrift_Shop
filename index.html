@@ -1,114 +1,610 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/cards.css">
-    <title>Thrift Shop</title>
+    <title>Third Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/947da680f6.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <!-- Cabecera y barra de navegación -->
+<body>
     <header>
-        <!-- Barra superior -->
-        <div class="first-header-content">
-            <div class="logo-container">
-                <img class="img-logo" src="./assets/img/Logo1.PNG" alt="">
+        <div class="headerTop">
+            <div class="containerLogo">
+                <a href="/index.html">
+                    <img src="/img/Logo.jpg" alt="" class="imgLogo">
+                </a>
             </div>
-            <div class="search-section">
-                <section class="search-container">
+            <div class="containerIcons">
+                <a href="https://g.page/unen-rupap?share">
+                    Ubicación
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="search-boxes">Categorias</span>
-                    <input type="text">
-                    <span class="search-boxes"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </section>
-                <section>
+                </a>
+                <div class="busquedaTexto">
+
+                    <input type="text" id="txtBuscarTexto" class="barraBusqueda">
+                    <label for="txtBuscarTexto">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+
+
+                <a href="/html/compras.html">
+                    Compras
                     <i class="fa-solid fa-cart-arrow-down"></i>
+                </a>
+                <a href="#modalLogin">
+                    Usuario
                     <i class="fa-solid fa-user"></i>
-                </section>
+                </a>
             </div>
         </div>
-        <!-- menu de navegacion -->
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="">Todo</a></li>
-                <li><a href="">Ofertas del Dia</a></li>
-                <li><a href="">Servicio al Cliente</a></li>
-                <li><a href="">Catálogo</a></li>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="lblHamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menuNavegacion">
+                <li><a class="active" href="#">Todo</a></li>
+                <li><a href="#">Oferta del Día</a></li>
+                <li><a href="#">Servicio al Cliente</a></li>
+                <li><a href="#">Catalogo</a></li>
+
             </ul>
-            <button id="btn-burguer" class="btn-burguer"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
 
-    <!-- Bloque de presentacion -->
-    <div class="presentacion">
-        <img src="./assets/img/BlackFriday.png" alt="">
-    </div>
+    <section id="hero">
+    </section>
 
-    <!-- Contenido principal -->
-    <main>
-        
-        <!-- bloque 1 -->
-        <div clas="galeria">
-            <h2>Ofertas Y Descuentos</h2>
-            <div class="lista_img">
-                <div class="card">
-                    <img src="/assets/img/sofa.png">
-                    <a href="#">Leer más</a>
-                    <h5>Juego de sala gris victoriano 2-2</h5>
+    <section id="primerCarrusel">
+        <div class="container">
+
+            <h2 class="efectoLinea">Ofertas Y Liquidaciones</h2>
+            <div class="img-container">
+                <div class="containerSlider">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-container mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/01.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/02.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/03.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/04.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
                 </div>
-                <div class="card">
-                    <img src="/assets/img/silla.png">
-                    <a href="#">Leer más</a>
-                    <h5>Tablet Alcatel 1T1 7plgs</h5>
-                </div>
-                <div class="card">
-                    <img src="/assets/img/cafetera.png">
-                    <a href="#">Leer más</a>
-                    <h5>Silla de oficina 1-2</h5>
-                </div>
-            
+
             </div>
         </div>
-        <!-- bloque 2 -->
-        <div>
+
+    </section>
+
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container">
+                <h2 class="efectoLinea">Recomendaciones</h2>
+                <div class="containerSlider">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-container mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/01.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/02.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/03.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/04.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="texto">
+
+            <h2>Lo más gustado por los usuarios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos
+                commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus,
+                perspiciatis odio nemo minus vel!</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="tercerCarrusel">
+        <div class="texto">
+
+            <h2>Lo más gustado por los usuarios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos
+                commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus,
+                perspiciatis odio nemo minus vel!</p>
+        </div>
+        <div class="container">
+            <div class="img-container">
+                <h2 class="efectoLinea">Blusas y Vestidos</h2>
+                <div class="containerSlider">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-container mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/01.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/02.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/03.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/04.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section id="cuartoCarrusel">
+        <div class="container">
+            <div class="img-container">
+                <h2 class="efectoLinea">Recomendaciones</h2>
+                <div class="containerSlider">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-container mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/01.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/02.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/03.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/04.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h4>Descripción</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus
+                                            dolorum non,
+                                            modi
+                                            sunt ips.</p>
+                                    </div>
+                                    <div class="card-link">
+                                        <a href="/html/detalleProducto.html">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="texto">
+
+            <h2>Lo más gustado por los usuarios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos
+                commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus,
+                perspiciatis odio nemo minus vel!</p>
+        </div>
+        </div>
+    </section>
+
+    <footer class="pieDePagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/img/Logo1.PNG" alt="Logo de Happy Family">
+                    </a>
+
+                </figure>
+
+                <div class="red-social">
+                    <p>CONOCENOS</p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+
+            </div>
+            <div class="box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15602.549864955838!2d-86.2241076!3d12.136939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x842c4aeae5cf3cda!2sUniversidad%20Nacional%20de%20Ingenier%C3%ADa%20(RUPAP)!5e0!3m2!1ses-419!2sni!4v1653614701672!5m2!1ses-419!2sni"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate facilis dolorum eaque ex
+                    doloribus libero nobis fuga cumque temporibus! Nisi neque modi facilis dolor nihil veniam itaque,
+                    quam non!</p>
+                <i class="fa-solid fa-envelope"> ThridShop@mail.com</i>
+                <i class="fa-solid fa-mobile-screen"> +505 5555 7777</i>
+                <i class="fa-solid fa-location-dot"> Managua,Nicaragua</i>
+            </div>
 
         </div>
-        <!-- bloque 3 -->
-        <div>
-
+        <div class="grupo-2">
+            <p>&copy; 2022 ThridShop | ¿Necesitas Ayuda? | Contactar | Condiciones de Uso | Politica de Privacidad |
+                Politica de Cookies</p>
         </div>
-        <!-- bloque 4 -->
-        <div>
-
-        </div>
-    </main>
-
-    <!-- Pie de pagina -->
-    <!-- <footer>
-        <div>
-            <section>
-
-            </section>
-            <section>
-                <div></div>
-                <div></div>
-                <div></div>
-            </section>
-        </div>
-        <ul>
-            <li>¿Necesitas ayuda?</li>
-            <li>Contactar</li>
-            <li>Condiciones de Uso</li>
-            <li>Politica de Privacidad</li>
-            <li>Políticas de Cookies</li>
-        </ul> -->
     </footer>
+
+    <div id="modalLogin" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="/img/Logo1.PNG" alt="logo">
+                </a>
+
+            </div>
+            <div class="iconosLogin">
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <i class="fa-brands fa-google"></i></a>
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="email" required>
+                    <span></span>
+                    <label>Correo</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+
+                <div class="pass">Olvidé mi Contraseña</div>
+                <div class="botones">
+                    <a href="#" class="btnRegresar">Salir</a>
+                    <input type="submit" value="Iniciar Sesion">
+                </div>
+                <div class="signup_link">
+                    ¿No tienes una cuenta? <a href="#modalRegistro">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalRegistro" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo1.PNG" alt="logo">
+                </a>
+
+
+            </div>
+            <div class="iconosLogin">
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <i class="fa-brands fa-google"></i></a>
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Apellido</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Direccion</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" required>
+                    <span></span>
+                    <label>Correo</label>
+                </div>
+                <div class="txt_field">
+                    <input type="tel" required>
+                    <span></span>
+                    <label>Télefono</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirmar Contraseña</label>
+                </div>
+                
+                <div class="botones">
+                    <a href="#" class="btnRegresar">Salir</a>
+                    <input type="submit" value="Registrarse">
+                </div>
+
+        </div>
+
+        </form>
+    </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/sliderCards.js"></script>
 </body>
-<script src="./js/main.js"></script>
+
 </html>
