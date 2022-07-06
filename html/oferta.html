@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
     <link rel="shortcut icon" href="/img/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/oferta.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/947da680f6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="headerTop">
@@ -57,6 +60,60 @@
             </ul>
         </nav>
     </header>
+
+    <section class="sectionOferta">
+
+
+        <div class="card" id="card">
+            <div class="imagen-mostrada">
+                <img src="./img/azul.png" alt="">
+            </div>
+            <div class="titulo">
+                <span>NIke Phantom GT</span>
+            </div>
+            <div class="colores">
+                <span class="azul" id="azul"></span>
+                <span class="naranja" id="naranja"></span>
+                <span class="blanco" id="blanco"></span>
+            </div>
+            <div class="tallas-contenedor">
+                <div class="titulo">
+                    <span>Tallas</span>
+                </div>
+                <div class="tallas">
+                    <div class="talla">
+                        <span>37</span>
+                    </div>
+                    <div class="talla">
+                        <span>38</span>
+                    </div>
+                    <div class="talla">
+                        <span>39</span>
+                    </div>
+                    <div class="talla active">
+                        <span>40</span>
+                    </div>
+                    <div class="talla">
+                        <span>41</span>
+                    </div>
+                    <div class="talla">
+                        <span>42</span>
+                    </div>
+                    <div class="talla">
+                        <span>43</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagenes">
+            <img src="./img/azul.png" class="azul" alt="">
+            <img src="./img/naranja.png" class="naranja" alt="">
+            <img src="./img/blanco.png" class="blanco" alt="">
+        </div>
+
+    </section>
+
 
     <footer class="pieDePagina">
         <div class="grupo-1">
@@ -202,5 +259,8 @@
 
         </form>
     </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
